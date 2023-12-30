@@ -1,0 +1,134 @@
+.work-section {
+  padding-bottom: 70rem;
+}
+
+.work{
+    background-color: #000000;
+    padding: 9rem 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    height: 60vh;
+    align-items: center;
+  
+}
+.work-text {
+    width: 75%; 
+}
+.work-text > h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    color: white;
+}
+.work-text > h3 {
+    margin-bottom: 0;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    color: #2272FF;
+}
+.work  hr {
+    width: 70%;
+    opacity: .1;
+}
+
+.gallery {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   transition: opacity 0.5s ease;
+   width: 90%;
+}
+
+
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hover-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.5s ease;
+  }
+  
+  .work-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control dimness */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .visit-site-text {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  
+  .work-overlay >*:nth-child(1) {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .image-container:hover .hover-image {
+    filter: brightness(70%); /* Adjust brightness to control dimness */
+    transform: scale(1.1); /* Zoom in effect */
+    transition: all 1s ease-in-out;
+}
+
+  
+  .image-container:hover .work-overlay {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 690px) {
+
+    .work{
+        padding: 9rem 1rem; 
+    }
+
+    .work-text > h1 {
+        font-size: 1.7rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: white;
+       
+    }
+    .work-text > h3 {
+        letter-spacing: .2rem;
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+    .work-text {
+        width: 95%; 
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        transition: opacity 0.5s ease;
+        width: 90%;
+       
+     }
+  }
+
+  @media screen and (max-width: 1024px) {
+   
+  }

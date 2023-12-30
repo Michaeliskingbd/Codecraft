@@ -1,0 +1,138 @@
+.footer {
+    background-color: #111111;
+    padding: 4rem 13rem;
+}
+.main-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 0;
+}
+.left-footer h1 {
+    color: #2272FF;
+    margin: 0;
+}
+.main-footer p {
+    line-height: 2rem;
+    color:rgba(255, 255, 255, 0.3);
+    font-size: .9rem;
+    margin-top: 2rem;
+}
+.right-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+   
+}
+.right-footer h3 {
+    color: white;
+    margin: 0;
+    font-size: .9rem;
+}
+.subscribe {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    width: 100%;
+    background-color: #000000;
+    padding: 0;
+    justify-content: space-between;
+}
+.subscribe input {
+    border: none;
+    background-color: transparent;
+    height: 100%;
+    color: #fff;
+    font-size: .9rem;
+    margin-left: -3rem; 
+}
+.subscribe >*:nth-child(1){
+    font-size: 1.8rem;
+    color: #fff;
+    margin-left: 1rem
+}
+.btn {
+    background-color: #2272FF;
+    width: 34%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .2rem;
+}
+
+.copyright {
+    margin-top: 5rem;
+   font-size: .9rem;
+   color:rgba(255, 255, 255, 0.3);
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+}
+
+@media screen and (max-width: 690px) {
+    .footer {
+        background-color: #111111;
+        padding: 4rem 2rem;
+    }
+    
+    .main-footer {
+        grid-template-columns:1fr;
+        gap: 4rem;
+    }
+
+    .subscribe >*:nth-child(1){
+       display: none;
+    }
+    .subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 8rem;
+        width: 100%;
+        background-color: #111111;
+        padding: 0;
+        justify-content: space-between;
+        gap: 0rem;
+        margin-top: 1rem;
+    }
+    .subscribe input {
+        border: none;
+        background-color: rgba(0, 0, 0, 0.1);
+        height: 3.5rem;
+        width: 100%;
+        color: #fff;
+        font-size: .9rem;
+        margin-left: 0rem;
+        text-align: center;
+    }
+    .btn {
+        background-color: #2272FF;
+        width: 100%;
+        height: 3.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: .2rem;
+        text-align: center;
+    }
+    
+.copyright {
+    margin-top: 5rem;
+   font-size: .8rem;
+   color:rgba(255, 255, 255, 0.3);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   gap: 1rem;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    .main-footer {
+        grid-template-columns:1fr;
+        gap: 4rem;
+    }
+}

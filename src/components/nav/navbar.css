@@ -1,0 +1,430 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 35px 20px 35px;
+    color: #fff; 
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: #2272FF;
+    gap: 15px;
+    position: fixed;
+    right: 2rem;
+    padding: 3px 6px;
+    top: 1rem;
+}
+.nav-left {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: flex-start;
+}
+.nav__scrolled {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    color: #2272FF;
+    gap: 15px;
+    position: fixed;
+    right: 2rem;
+    background-color: black;
+    padding: 3px 6px;
+    top: 1rem;
+}
+
+
+/*HEADER*/
+
+header {
+    background-image: url(../../assets/header.jpg);
+    height: 130vh;
+    transition: all 1s ease;
+    position: relative;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+}
+.header-text {
+    color: #fff;
+    margin: 10% 0px;
+    padding-left: 250px;
+    padding-right: 40px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-text h1 {
+    font-size: 3.4rem;
+    line-height: 4.5rem;
+    width: 700px;
+    margin-top: 10px;
+}
+.header-text h3 {
+    margin-bottom: 0;
+    margin-left: 10px;
+    color: gray;
+}
+
+.header-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.circle {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;  
+}
+.circle:hover {
+    opacity: 0.7;
+  }
+
+
+.CTA {
+    color: #fff;
+    width: 500px;
+    padding-left: 50px;
+    margin: 0 200px; 
+    display: flex;
+    gap: 20px;
+   
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.CTA-btn {
+    border: 2px solid white;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+.CTA-btn:hover {
+    background-color: white;
+    color: black;
+    transition: all 1s ease;
+}
+
+/*MOBILE-NAV*/
+
+.mobile-nav {
+    width: 200px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    background: #0C0C0C;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+  
+ 
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+   
+}
+.navigation h3 {
+    font-size: .7rem;
+    letter-spacing: 2.5px;
+    color: #2272FF;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+  
+}
+
+.nav-text {
+    font-size: .8rem;
+    line-height: 1.4rem;
+    color: rgba(255, 255, 255, 0.15);
+}
+.nav-socials {
+    display: flex;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
+.nav-socials > *:hover {
+    color: rgb(255, 255, 255);
+}
+.home-line {
+    display: block;
+    width: 2px;
+    height: 7.2rem;
+    background-color: #2272FF;
+    position: absolute;
+    right: 7.2rem;
+    bottom: 0;
+}
+.scroll {
+    position: absolute;
+    right: 9.5rem;
+    bottom: 5.4rem;
+   cursor: pointer;
+}
+.scroll a {
+    font-size: .7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    color: #FFFFFF;
+    position: relative;
+    display: inline-block;
+    line-height: 3rem;
+    padding-left: 2rem;
+}
+
+@media screen and (max-width: 690px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 35px 20px 35px;
+        color: #fff; 
+        align-items: center;
+    }
+    .nav-right {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        color: #2272FF;
+        gap: 12px;
+        position: fixed;
+        right: 2rem;
+        padding: 3px 6px;
+        top: 1rem;
+    }
+    .nav__scrolled {
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        color: #2272FF;
+        gap: 15px;
+        position: fixed;
+        right: 2rem;
+        background-color: black;
+        padding: 3px 6px;
+        top: 1rem;
+    }
+    .nav-left {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        align-items: flex-start;
+    }
+    .logo-dot{
+        font-size: .5rem;
+    }
+    header { 
+        background-image: url(../../assets/header.jpg);
+        background-position: center;
+        height: 100vh;
+    }
+    .overlay {
+        background-color: rgba(0, 0, 0, .5);
+        height: 100%;
+    }
+    .header-text {
+        color: hsl(0, 0%, 100%);
+        margin: auto;
+        margin-top: 25%;
+        text-align: center;
+        width: 70%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        
+    }
+    .header-text h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .header-text h3 {
+        margin-bottom: 0;
+        margin-left: 10px;
+        color: gray;
+        font-size: 1rem;
+    }
+    .header-socials {
+        display: none;
+    }
+ 
+    .CTA {
+        color: #fff;
+        width: fit-content; 
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+      
+
+     
+       
+    }
+    .CTA-btn {
+        border: 1px solid white;
+        padding: 15px 20px;
+        width: 15rem;
+        text-align: center;
+        font-weight: 500;
+        cursor: pointer;
+        margin: auto;
+       
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .mobile-nav {
+        width: 220px;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #0C0C0C;
+        height: 100vh;
+        gap:3rem;
+        justify-content: inherit;
+        position: fixed;
+    }
+    
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+       
+    }
+    .navigation h3 {
+        font-size: .7rem;
+        letter-spacing: 2.5px;
+        color: #2272FF;
+    }
+    
+    .menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 1.2rem;
+      
+    }
+    
+    .nav-text {
+        font-size: .8rem;
+        line-height: 1.4rem;
+        color: rgba(255, 255, 255, 0.15);
+    }
+    .nav-socials {
+        display: flex;
+        gap: 10px;
+        color: rgba(255, 255, 255, 0.15);
+        cursor: pointer;
+    }
+    .nav-socials > *:hover {
+        color: rgb(255, 255, 255);
+    }
+    .nav-right > *:nth-child(1) {
+        display: none;
+    }
+    .scroll {
+        position: absolute;
+        right: 4.5rem;
+        bottom: 3.4rem;
+       cursor: pointer;
+    }
+    .scroll a {
+        font-size: .5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        color: #FFFFFF;
+        position: relative;
+        display: inline-block;
+        line-height: 3rem;
+        padding-left: 2rem;
+    }
+    .home-line {
+        display: block;
+        width: 2px;
+        height: 5.2rem;
+        background-color: #2272FF;
+        position: absolute;
+        right: 3.2rem;
+        bottom: 0;
+    }
+    
+ 
+}
+
+@media screen and (max-width: 1024px) {
+
+    header {
+       
+        height: 100vh;
+      
+    }
+    .header-text {
+        color: white;
+        margin: auto;
+        margin-top: 25%;
+        text-align: center;
+        width: 70%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        
+    }
+    .header-text h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+  
+}
